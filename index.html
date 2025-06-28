@@ -4,31 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login Page</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[url('https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY-1200-80.jpg')] bg-center bg-cover min-h-screen flex items-center justify-center relative">
 
-  <div class="w-screen h-[100vh] bg-black opacity-50 absolute top-0 left-0"></div>
+  <div class="w-screen h-full bg-black opacity-50 absolute top-0 left-0"></div>
 
-  <div class="relative text-white text-center flex flex-col gap-4 mx-auto border-2 rounded-md px-4 w-[30%] py-6 ">
+  <div class="relative text-white text-center flex flex-col gap-4 mx-4 sm:mx-auto border-2 rounded-md px-4 w-full sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] py-6 backdrop-blur-md bg-white bg-opacity-10">
     <h1 class="text-2xl uppercase font-semibold">Login </h1>
-    <div class="flex flex-col gap-2 w-[70%] mx-auto">
+
+    <div class="flex flex-col gap-2 w-full sm:w-[80%] mx-auto">
       <label class="text-xl font-semibold text-left">Username</label>
-      <input class="outline-none px-4 py-2 rounded-full bg-transparent border-2 border-white text-white" type="text" placeholder="Email">
+      <input class="outline-none px-4 py-2 rounded-full bg-transparent border-2 border-white text-white placeholder-white" type="text" placeholder="Email">
     </div>
 
-    <div class="flex flex-col gap-2 w-[70%] mx-auto">
+    <div class="flex flex-col gap-2 w-full sm:w-[80%] mx-auto">
       <label class="text-xl font-semibold text-left">Password</label>
-      <input class="outline-none px-4 py-2 rounded-full bg-transparent border-2 border-white text-white" type="password" placeholder="Password">
+      <input class="outline-none px-4 py-2 rounded-full bg-transparent border-2 border-white text-white placeholder-white" type="password" placeholder="Password">
     </div>
 
-    <div class="text-md flex gap-4 mx-auto items-center">
-      <input type="checkbox" name="Remember me" id="#">
-      <label for="">Remember me</label>
+    <div class="text-md flex flex-col sm:flex-row gap-2 sm:gap-4 mx-auto items-center text-sm">
+      <label class="flex items-center gap-2">
+        <input type="checkbox" name="Remember me">
+        Remember me
+      </label>
       <a class="hover:underline" href="#">Forgot Password</a>
     </div>
 
-    <button class="bg-purple-700 px-4 py-2 rounded-md text-xl w-[200px] mx-auto hover:bg-transparent hover:border-purple-600 border-2"> Login</button>
+    <button class="bg-purple-700 px-4 py-2 rounded-md text-xl w-[80%] sm:w-[60%] mx-auto hover:bg-transparent hover:border-purple-600 border-2">
+      Login
+    </button>
   </div>
 </body>
 </html>
